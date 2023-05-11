@@ -108,7 +108,26 @@ article h2 {
 
 /*  img width set to manage overflow of image display resolution */
 .work img {
-    width: 65vw;
+    width: 70vw;
+    border: 1px solid #cb4d1f
+}
+
+.work p {
+    color: var(--light-font-color);
+    background-color: #cb4d1f;
+    font-size: large;
+    text-align: center;
+}
+
+/*  display inline-block so that project position dynamically based on screen size */
+.projectcard {
+    display: inline-block;
+    min-width: 200px;
+}
+
+.projectcard img {
+    width: 30vw;
+    
 }
 
 .contact {
@@ -117,7 +136,6 @@ article h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--dark-font-color);
 }
-
 
 .contact ul li {
     display: inline-block;
@@ -139,3 +157,21 @@ article h2 {
 .footer h2 {
     font-size: 20px;
 }
+
+
+/* Responsive layout changes for small screen*/
+@media screen and (max-width: 870px) {
+    .header nav {
+        float:none;
+    }
+    article {
+        display: block;
+    }
+    article h2 {
+      text-align: left;
+    }
+    .work img {
+        width: 90vw;
+    }
+
+  }
