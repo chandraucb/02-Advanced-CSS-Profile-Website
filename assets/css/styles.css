@@ -119,17 +119,20 @@ article h2 {
     text-align: center;
 }
 
-/*  display inline-block so that project position dynamically based on screen size */
+/*  display flex so that project cards are positioned dynamically based on screen size */
+.futurework {
+    display:flex;
+    flex-wrap: wrap;
+}
 .projectcard {
-    display: inline-block;
-    min-width: 200px;
+    flex: 1 0 200px; 
 }
 
 .projectcard img {
     width: 30vw;
     
 }
-
+/* contact styles */
 .contact {
     margin-bottom: 20px;
     padding: 30px;
